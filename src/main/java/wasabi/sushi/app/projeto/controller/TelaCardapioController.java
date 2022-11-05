@@ -40,7 +40,7 @@ public class TelaCardapioController implements Initializable {
     private Button btnVoltar;
 
     @FXML
-    private Pane tela = new Pane();
+    private Pane telapratos = new Pane();
 
     private final List<Node> children = new ArrayList<>();
 
@@ -125,7 +125,7 @@ public class TelaCardapioController implements Initializable {
             FXMLLoader loader = new FXMLLoader(getClass().getResource(absolutName));
             Pane pane = loader.load();
 
-            tela.getChildren().addAll(pane);
+            telapratos.getChildren().addAll(pane);
 
             T controller = loader.getController();
             initializingAction.accept(controller);

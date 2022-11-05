@@ -11,7 +11,7 @@
    <children>
       <AnchorPane layoutY="85.0" prefHeight="416.0" prefWidth="600.0">
          <children>
-            <Pane fx:id="tela" layoutY="-4.0" prefHeight="422.0" prefWidth="600.0" />
+            <Pane fx:id="telapratos" layoutY="-4.0" prefHeight="422.0" prefWidth="600.0" />
          </children></AnchorPane>
       <AnchorPane prefHeight="40.0" prefWidth="600.0">
          <children>
