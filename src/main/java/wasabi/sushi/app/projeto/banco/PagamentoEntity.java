@@ -4,7 +4,7 @@ import javax.persistence.*;
 
 @Entity
 @Table(name = "pedido", schema = "formacaojava", catalog = "")
-public class PedidoEntity {
+public class PagamentoEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
     @Column(name = "idPedido")
@@ -24,6 +24,17 @@ public class PedidoEntity {
     @Basic
     @Column(name = "Forma_pagamento")
     private String formaPagamento;
+
+    public PagamentoEntity(int clienteIdCliente, int produtoIdProduto, String valorTotal, String numeroNota, String formaPagamento) {
+        this.clienteIdCliente = clienteIdCliente;
+        this.produtoIdProduto = produtoIdProduto;
+        this.valorTotal = valorTotal;
+        this.numeroNota = numeroNota;
+        this.formaPagamento = formaPagamento;
+    }
+
+    public PagamentoEntity() {
+    }
 
     public int getIdPedido() {
         return idPedido;
