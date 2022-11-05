@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" styleClass="background" stylesheets="@../style/style.css" fx:controller="wasabi.sushi.app.controller.TemakiEspecialController" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane layoutX="7.0" layoutY="35.0" prefHeight="468.0" prefWidth="600.0">
+         <children>
+            <ImageView fitHeight="55.0" fitWidth="100.0" layoutX="29.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagem/t1.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="131.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TEMAKI EXOTIC" />
+            <Text layoutX="128.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Salmão, Kani, Shimeji Fritos na Manteiga e Cream Cheese, arroz e algas..." wrappingWidth="217.228515625" />
+            <Button fx:id="addTem01" layoutX="459.0" layoutY="35.0" mnemonicParsing="false" text="adicionar" />
+            <Line endX="485.0" layoutX="74.0" layoutY="99.0" startX="-43.0" stroke="#0000004a" />
+            <ImageView fitHeight="53.0" fitWidth="104.0" layoutX="29.0" layoutY="127.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagem/t2.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="131.0" layoutY="140.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TEMAKI PORÓ" />
+            <Text layoutX="135.0" layoutY="162.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Salmão misturado com Alho poró na casquinha de massa Harumaki, arroz..." wrappingWidth="204.22851562499997" />
+            <Button fx:id="addTem02" layoutX="459.0" layoutY="141.0" mnemonicParsing="false" text="adicionar" />
+            <Line endX="485.0" layoutX="72.0" layoutY="204.0" startX="-43.0" stroke="#0000004a" />
+            <ImageView fitHeight="53.0" fitWidth="104.0" layoutX="30.0" layoutY="231.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagem/t3.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="131.0" layoutY="247.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TEMAKI SALMÃO ESPECIAL" />
+            <Text layoutX="128.0" layoutY="266.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Salmão Grelhado na casquinha de massa Harumaki, Cream Cheese, arroz.." wrappingWidth="217.228515625" />
+            <Button fx:id="addTem03" layoutX="459.0" layoutY="245.0" mnemonicParsing="false" text="adicionar" />
+            <Line endX="485.0" layoutX="64.0" layoutY="315.0" startX="-43.0" stroke="#0000004a" />
+            <ImageView fitHeight="53.0" fitWidth="104.0" layoutX="30.0" layoutY="341.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagem/t4.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="131.0" layoutY="354.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TEMAKI SUPER WASAPI" />
+            <Text layoutX="128.0" layoutY="385.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Salmão, Camarão e Kani na massa Harumaki com Cream Cheese, arroz e cebolinha." wrappingWidth="241.9140625" />
+            <Button fx:id="addTem04" layoutX="459.0" layoutY="364.0" mnemonicParsing="false" text="adicionar" />
+            <Text layoutX="414.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="41.50" />
+            <Text layoutX="414.0" layoutY="158.0" strokeType="OUTSIDE" strokeWidth="0.0" text="42.50" />
+            <Text layoutX="414.0" layoutY="262.0" strokeType="OUTSIDE" strokeWidth="0.0" text="43.50" />
+            <Text layoutX="414.0" layoutY="381.0" strokeType="OUTSIDE" strokeWidth="0.0" text="45.50" />
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="34.0" prefWidth="600.0">
+         <children>
+            <ToolBar layoutY="2.0" prefHeight="33.0" prefWidth="600.0">
+               <items>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="TEMAKI ESPECIAL - CARDAPIO" />
+               </items>
+            </ToolBar>
+         </children>
+      </AnchorPane>
+   </children>
+</Pane>

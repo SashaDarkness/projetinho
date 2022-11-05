@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" styleClass="background" stylesheets="@../style/style.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="wasabi.sushi.app.controller.PromocaoController">
+   <children>
+      <AnchorPane layoutY="35.0" prefHeight="468.0" prefWidth="600.0">
+         <children>
+            <ImageView fitHeight="55.0" fitWidth="100.0" layoutX="29.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagem/p1.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="131.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="COMBO PROMO 01 (15 PEÇAS)" />
+            <Text layoutX="131.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="10 Hol De Salmão Grelhado Com Batata Palha Doce, 3 Niguiris De Skin...&quot;" wrappingWidth="219.13671875" />
+            <Button fx:id="addProm01" layoutX="459.0" layoutY="35.0" mnemonicParsing="false" text="adicionar" />
+            <Line endX="485.0" layoutX="74.0" layoutY="99.0" startX="-43.0" stroke="#0000004a" />
+            <ImageView fitHeight="53.0" fitWidth="104.0" layoutX="29.0" layoutY="127.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagem/p2.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="131.0" layoutY="132.0" strokeType="OUTSIDE" strokeWidth="0.0" text="COMBO PROMO 02 (15 PEÇAS)" />
+            <Text layoutX="131.0" layoutY="158.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4 Sashimi De Salmão, 2 Guinkas Maçarico Com Molho De Manga,..." wrappingWidth="237.806640625" />
+            <Button fx:id="addProm02" layoutX="459.0" layoutY="132.0" mnemonicParsing="false" text="adicionar" />
+            <Line endX="485.0" layoutX="72.0" layoutY="204.0" startX="-43.0" stroke="#0000004a" />
+            <ImageView fitHeight="53.0" fitWidth="104.0" layoutX="30.0" layoutY="231.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagem/p3.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="131.0" layoutY="247.0" strokeType="OUTSIDE" strokeWidth="0.0" text="COMBO PROMO 03 (15 PEÇAS)" />
+            <Text layoutX="131.0" layoutY="271.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5 Makimono Skin Com Pesto De Jambu, 5 Hot De Kani Com Pate De..." wrappingWidth="256.021484375" />
+            <Button fx:id="addProm03" layoutX="459.0" layoutY="245.0" mnemonicParsing="false" text="adicionar" />
+            <Line endX="485.0" layoutX="72.0" layoutY="314.0" startX="-43.0" stroke="#0000004a" />
+            <ImageView fitHeight="53.0" fitWidth="104.0" layoutX="30.0" layoutY="341.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagem/p4.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="131.0" layoutY="354.0" strokeType="OUTSIDE" strokeWidth="0.0" text="COMBO PROMO 04 (15 PEÇAS)" />
+            <Text layoutX="131.0" layoutY="375.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5 Gunkan Com Patê De Polvo, Apimentado 2 Niguiris De Kani 2 Ni..." wrappingWidth="279.55078125" />
+            <Button fx:id="addProm04" layoutX="459.0" layoutY="355.0" mnemonicParsing="false" text="adicionar" />
+            <Text layoutX="417.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="49.90" />
+            <Text layoutX="417.0" layoutY="149.0" strokeType="OUTSIDE" strokeWidth="0.0" text="53.90" />
+            <Text layoutX="417.0" layoutY="372.0" strokeType="OUTSIDE" strokeWidth="0.0" text="48.50" />
+            <Text layoutX="417.0" layoutY="262.0" strokeType="OUTSIDE" strokeWidth="0.0" text="49.90" />
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="34.0" prefWidth="600.0">
+         <children>
+            <ToolBar layoutY="2.0" prefHeight="33.0" prefWidth="600.0">
+               <items>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="PROMOÇÃO - CARDAPIO" />
+               </items>
+            </ToolBar>
+         </children>
+      </AnchorPane>
+   </children>
+</Pane>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" styleClass="background" stylesheets="@../style/style.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="wasabi.sushi.app.controller.EntradaController">
+   <children>
+      <AnchorPane layoutX="7.0" layoutY="35.0" prefHeight="468.0" prefWidth="600.0">
+         <children>
+            <ImageView fitHeight="55.0" fitWidth="100.0" layoutX="29.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagem/e1.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="131.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SALMÃO EM CONSUMER" />
+            <Text layoutX="135.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Salmão em Consumer com base de purê de Batata doce" wrappingWidth="158.13671875" />
+            <Button fx:id="addEnt01" layoutX="459.0" layoutY="35.0" mnemonicParsing="false" text="adicionar" />
+            <Line endX="485.0" layoutX="74.0" layoutY="99.0" startX="-43.0" stroke="#0000004a" />
+            <ImageView fitHeight="53.0" fitWidth="104.0" layoutX="29.0" layoutY="127.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagem/e2.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="131.0" layoutY="140.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LULA EM ANÉIS GRELHADA" />
+            <Text layoutX="135.0" layoutY="154.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Anéis de lula grelhada em fogo Brando com farofa de polvo" wrappingWidth="204.22851562499997" />
+            <Button fx:id="addEnt02" layoutX="459.0" layoutY="141.0" mnemonicParsing="false" text="adicionar" />
+            <Line endX="485.0" layoutX="72.0" layoutY="204.0" startX="-43.0" stroke="#0000004a" />
+            <ImageView fitHeight="53.0" fitWidth="104.0" layoutX="30.0" layoutY="231.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagem/e3.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="131.0" layoutY="247.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BOLINHA DE SALMÃO FRITAS" />
+            <Text layoutX="135.0" layoutY="258.0" strokeType="OUTSIDE" strokeWidth="0.0" text="10 unidades de Salmão temperado com limão e cebolinha, empanadas..." wrappingWidth="186.412109375" />
+            <Button fx:id="addEnt03" layoutX="459.0" layoutY="245.0" mnemonicParsing="false" text="adicionar" />
+            <Line endX="485.0" layoutX="64.0" layoutY="315.0" startX="-43.0" stroke="#0000004a" />
+            <ImageView fitHeight="53.0" fitWidth="104.0" layoutX="30.0" layoutY="341.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagem/e4.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="131.0" layoutY="354.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CAMARÃO EMPANADO (05 UNIDADE)" />
+            <Text layoutX="135.0" layoutY="381.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Camarão empanado frito..." />
+            <Button fx:id="addEnt04" layoutX="459.0" layoutY="364.0" mnemonicParsing="false" text="adicionar" />
+            <Text layoutX="414.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="39.00" />
+            <Text layoutX="414.0" layoutY="158.0" strokeType="OUTSIDE" strokeWidth="0.0" text="41.00" />
+            <Text layoutX="414.0" layoutY="262.0" strokeType="OUTSIDE" strokeWidth="0.0" text="28.00" />
+            <Text layoutX="414.0" layoutY="381.0" strokeType="OUTSIDE" strokeWidth="0.0" text="43.50" />
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="34.0" prefWidth="600.0">
+         <children>
+            <ToolBar layoutY="2.0" prefHeight="33.0" prefWidth="600.0">
+               <items>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="ENTRADAS - CARDAPIO" />
+               </items>
+            </ToolBar>
+         </children>
+      </AnchorPane>
+   </children>
+</Pane>

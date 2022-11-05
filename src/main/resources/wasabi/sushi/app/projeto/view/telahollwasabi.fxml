@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" styleClass="background" stylesheets="@../style/style.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="wasabi.sushi.app.controller.HollWasabiController">
+   <children>
+      <AnchorPane layoutX="7.0" layoutY="35.0" prefHeight="468.0" prefWidth="600.0">
+         <children>
+            <ImageView fitHeight="55.0" fitWidth="100.0" layoutX="29.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true" />
+            <Text layoutX="131.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="WASSABI HOLL MET" />
+            <Text layoutX="128.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5 peças do holl de salmão gerlhado, cream cheese, alga nori, arroz, gergilim e biscoitinho tempurá" wrappingWidth="217.228515625" />
+            <Text layoutX="414.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="23.50" />
+            <Button fx:id="addHoll01" layoutX="459.0" layoutY="35.0" mnemonicParsing="false" text="adicionar" />
+            <Line endX="485.0" layoutX="74.0" layoutY="99.0" startX="-43.0" stroke="#0000004a" />
+            <ImageView fitHeight="53.0" fitWidth="104.0" layoutX="30.0" layoutY="119.0" pickOnBounds="true" preserveRatio="true" />
+            <Text layoutX="131.0" layoutY="140.0" strokeType="OUTSIDE" strokeWidth="0.0" text="HOLL TARTA DE SALMÃO MET" />
+            <Text layoutX="135.0" layoutY="162.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5 peças de holl de salmão, arroz, gergelim, alga nori, cream cheese, a parte de salmão em cima" wrappingWidth="204.22851562499997" />
+            <Text layoutX="414.0" layoutY="158.0" strokeType="OUTSIDE" strokeWidth="0.0" text="24.50" />
+            <Button fx:id="addHoll02" layoutX="459.0" layoutY="141.0" mnemonicParsing="false" text="adicionar" />
+            <Line endX="485.0" layoutX="72.0" layoutY="204.0" startX="-43.0" stroke="#0000004a" />
+            <ImageView fitHeight="55.0" fitWidth="104.0" layoutX="30.0" layoutY="231.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagem/h3.png" />
+               </image></ImageView>
+            <Text layoutX="131.0" layoutY="247.0" strokeType="OUTSIDE" strokeWidth="0.0" text="HOLL TARTA DE SALMÃO" />
+            <Text layoutX="128.0" layoutY="266.0" strokeType="OUTSIDE" strokeWidth="0.0" text="10 peças de holl de Salmão e cream cheese, arroz, alga nori, gergelim, c..." wrappingWidth="217.228515625" />
+            <Text layoutX="414.0" layoutY="262.0" strokeType="OUTSIDE" strokeWidth="0.0" text="46.50" />
+            <Button fx:id="addHoll03" layoutX="459.0" layoutY="245.0" mnemonicParsing="false" text="adicionar" />
+            <Line endX="485.0" layoutX="64.0" layoutY="315.0" startX="-43.0" stroke="#0000004a" />
+            <ImageView fitHeight="70.0" fitWidth="74.0" layoutX="30.0" layoutY="341.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagem/h4.jpg" />
+               </image></ImageView>
+            <Text layoutX="131.0" layoutY="354.0" strokeType="OUTSIDE" strokeWidth="0.0" text="KASAI MET" />
+            <Text layoutX="128.0" layoutY="385.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5 peças de holl de camarão, cream cheese envolvido por finas camadas de salmão maçaricadas." wrappingWidth="241.9140625" />
+            <Text layoutX="414.0" layoutY="381.0" strokeType="OUTSIDE" strokeWidth="0.0" text="23.50" />
+            <Button fx:id="addHoll04" layoutX="459.0" layoutY="364.0" mnemonicParsing="false" text="adicionar" />
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="34.0" prefWidth="600.0">
+         <children>
+            <ToolBar layoutY="2.0" prefHeight="33.0" prefWidth="600.0">
+               <items>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="HOLL WASSABI- CARDAPIO" />
+               </items>
+            </ToolBar>
+         </children>
+      </AnchorPane>
+   </children>
+</Pane>
