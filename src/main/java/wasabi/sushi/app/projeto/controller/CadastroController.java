@@ -28,6 +28,8 @@ public class CadastroController implements Initializable {
     private Button btnVoltar;
     @FXML
     private Button btnFinalizar;
+    @FXML
+    private TextField idNumeroCartao;
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
