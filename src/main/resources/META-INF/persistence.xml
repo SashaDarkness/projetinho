@@ -5,9 +5,15 @@
              version="3.0">
   <persistence-unit name="default">
       <mapping-file>META-INF/orm.xml</mapping-file>
-
       <class>wasabi.sushi.app.projeto.banco.ClienteEntity</class>
-      <class>wasabi.sushi.app.projeto.banco.CursoEntity</class>
+      <class>wasabi.sushi.app.projeto.banco.EntradasEntity</class>
+      <class>wasabi.sushi.app.projeto.banco.HollWasabiEntity</class>
+      <class>wasabi.sushi.app.projeto.banco.NumeroCartaoEntity</class>
+      <class>wasabi.sushi.app.projeto.banco.PedidoEntity</class>
+      <class>wasabi.sushi.app.projeto.banco.ProdutoEntity</class>
+      <class>wasabi.sushi.app.projeto.banco.PromocaoEntity</class>
+      <class>wasabi.sushi.app.projeto.banco.TemakiEspecialEntity</class>
+
       <properties>
           <property name="openjpa.ConnectionURL" value="jdbc:mariadb://localhost:3306"/>
           <property name="openjpa.ConnectionDriverName" value="org.mariadb.jdbc.Driver"/>

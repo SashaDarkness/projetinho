@@ -8,22 +8,22 @@ public class ClienteEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
     @Column(name = "idCliente")
-    private long idCliente;
+    private int idCliente;
     @Basic
-    @Column(name = "nome")
+    @Column(name = "Nome")
     private String nome;
     @Basic
-    @Column(name = "cpf")
-    private String cpf;
+    @Column(name = "CPF")
+    private Integer cpf;
     @Basic
-    @Column(name = "email")
-    private String email;
+    @Column(name = "Endereco")
+    private String endereco;
 
-    public long getIdCliente() {
+    public int getIdCliente() {
         return idCliente;
     }
 
-    public void setIdCliente(long idCliente) {
+    public void setIdCliente(int idCliente) {
         this.idCliente = idCliente;
     }
 
@@ -35,19 +35,19 @@ public class ClienteEntity {
         this.nome = nome;
     }
 
-    public String getCpf() {
+    public Integer getCpf() {
         return cpf;
     }
 
-    public void setCpf(String cpf) {
+    public void setCpf(Integer cpf) {
         this.cpf = cpf;
     }
 
-    public String getEmail() {
-        return email;
+    public String getEndereco() {
+        return endereco;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public void setEndereco(String endereco) {
+        this.endereco = endereco;
     }
 }

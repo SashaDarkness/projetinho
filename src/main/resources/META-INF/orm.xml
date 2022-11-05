@@ -9,30 +9,144 @@
                 <column name="idCliente"/>
             </id>
             <basic name="nome">
-                <column name="nome"/>
+                <column name="Nome"/>
             </basic>
             <basic name="cpf">
-                <column name="cpf"/>
+                <column name="CPF"/>
             </basic>
-            <basic name="email">
-                <column name="email"/>
+            <basic name="endereco">
+                <column name="Endereco"/>
             </basic>
         </attributes>
     </entity>
-    <entity class="wasabi.sushi.app.projeto.banco.CursoEntity">
-        <table name="curso" schema="formacaojava" catalog=""/>
+    <entity class="wasabi.sushi.app.projeto.banco.EntradasEntity">
+        <table name="entradas" schema="formacaojava" catalog=""/>
         <attributes>
-            <id name="idCurso">
-                <column name="idCurso"/>
+            <id name="idEntradas">
+                <column name="idEntradas"/>
             </id>
             <basic name="nome">
-                <column name="nome"/>
+                <column name="Nome"/>
             </basic>
             <basic name="valor">
-                <column name="valor"/>
+                <column name="Valor"/>
             </basic>
-            <basic name="url">
-                <column name="url"/>
+            <basic name="descricao">
+                <column name="Descricao"/>
+            </basic>
+        </attributes>
+    </entity>
+    <entity class="wasabi.sushi.app.projeto.banco.HollWasabiEntity">
+        <table name="holl_wasabi" schema="formacaojava" catalog=""/>
+        <attributes>
+            <id name="idHollWasabi">
+                <column name="idHoll_Wasabi"/>
+            </id>
+            <basic name="nome">
+                <column name="Nome"/>
+            </basic>
+            <basic name="valor">
+                <column name="Valor"/>
+            </basic>
+            <basic name="descricao">
+                <column name="Descricao"/>
+            </basic>
+        </attributes>
+    </entity>
+    <entity class="wasabi.sushi.app.projeto.banco.NumeroCartaoEntity">
+        <table name="numero_cartao" schema="formacaojava" catalog=""/>
+        <attributes>
+            <id name="idNumeroCartao">
+                <column name="idNumero_Cartao"/>
+            </id>
+            <basic name="clienteIdCliente">
+                <column name="Cliente_idCliente"/>
+            </basic>
+            <basic name="numeroCartao">
+                <column name="Numero_Cartao"/>
+            </basic>
+            <basic name="nomeCartao">
+                <column name="Nome_Cartao"/>
+            </basic>
+        </attributes>
+    </entity>
+    <entity class="wasabi.sushi.app.projeto.banco.PedidoEntity">
+        <table name="pedido" schema="formacaojava" catalog=""/>
+        <attributes>
+            <id name="idPedido">
+                <column name="idPedido"/>
+            </id>
+            <basic name="clienteIdCliente">
+                <column name="Cliente_idCliente"/>
+            </basic>
+            <basic name="produtoIdProduto">
+                <column name="Produto_idProduto"/>
+            </basic>
+            <basic name="valorTotal">
+                <column name="Valor_Total"/>
+            </basic>
+            <basic name="numeroNota">
+                <column name="Numero_nota"/>
+            </basic>
+            <basic name="formaPagamento">
+                <column name="Forma_pagamento"/>
+            </basic>
+        </attributes>
+    </entity>
+    <entity class="wasabi.sushi.app.projeto.banco.ProdutoEntity">
+        <table name="produto" schema="formacaojava" catalog=""/>
+        <attributes>
+            <id name="idProduto">
+                <column name="idProduto"/>
+            </id>
+            <basic name="quantidade">
+                <column name="Quantidade"/>
+            </basic>
+            <basic name="temakiEspecialIdTemakiEspecial1">
+                <column name="Temaki_Especial_idTemaki_Especial1"/>
+            </basic>
+            <basic name="hollWasabiIdHollWasabi">
+                <column name="Holl_Wasabi_idHoll_Wasabi"/>
+            </basic>
+            <basic name="promocaoIdPromocao">
+                <column name="Promocao_idPromocao"/>
+            </basic>
+            <basic name="entradasIdEntradas">
+                <column name="Entradas_idEntradas"/>
+            </basic>
+        </attributes>
+    </entity>
+    <entity class="wasabi.sushi.app.projeto.banco.PromocaoEntity">
+        <table name="promocao" schema="formacaojava" catalog=""/>
+        <attributes>
+            <id name="idPromocao">
+                <column name="idPromocao"/>
+            </id>
+            <basic name="nome">
+                <column name="Nome"/>
+            </basic>
+            <basic name="valor">
+                <column name="Valor"/>
+            </basic>
+            <basic name="descricao">
+                <column name="Descricao"/>
+            </basic>
+        </attributes>
+    </entity>
+    <entity class="wasabi.sushi.app.projeto.banco.TemakiEspecialEntity">
+        <table name="temaki_especial" schema="formacaojava" catalog=""/>
+        <attributes>
+            <id name="idTemakiEspecial">
+                <column name="idTemaki_Especial"/>
+            </id>
+            <basic name="nome">
+                <column name="Nome"/>
+            </basic>
+            <basic name="valor">
+                <column name="Valor"/>
+            </basic>
+            <basic name="descricao">
+                <column name="Descricao"/>
             </basic>
         </attributes>
     </entity>
