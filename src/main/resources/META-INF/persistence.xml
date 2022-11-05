@@ -8,8 +8,8 @@
       <class>wasabi.sushi.app.projeto.banco.ClienteEntity</class>
       <class>wasabi.sushi.app.projeto.banco.EntradasEntity</class>
       <class>wasabi.sushi.app.projeto.banco.HollWasabiEntity</class>
-      <class>wasabi.sushi.app.projeto.banco.NumeroCartaoEntity</class>
-      <class>wasabi.sushi.app.projeto.banco.PedidoEntity</class>
+      <class>wasabi.sushi.app.projeto.banco.PagamentoEntity</class>
+      <class>wasabi.sushi.app.projeto.banco.PagamentoEntity</class>
       <class>wasabi.sushi.app.projeto.banco.ProdutoEntity</class>
       <class>wasabi.sushi.app.projeto.banco.PromocaoEntity</class>
       <class>wasabi.sushi.app.projeto.banco.TemakiEspecialEntity</class>

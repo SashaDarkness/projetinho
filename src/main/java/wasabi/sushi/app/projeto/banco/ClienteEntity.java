@@ -19,6 +19,15 @@ public class ClienteEntity {
     @Column(name = "Endereco")
     private String endereco;
 
+    public ClienteEntity(String nome, Integer cpf, String endereco) {
+        this.nome = nome;
+        this.cpf = cpf;
+        this.endereco = endereco;
+    }
+
+    public ClienteEntity() {
+    }
+
     public int getIdCliente() {
         return idCliente;
     }
