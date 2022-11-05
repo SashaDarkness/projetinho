@@ -1,9 +1,11 @@
 package wasabi.sushi.app.projeto.controller;
 
+import wasabi.sushi.app.projeto.aplication.main;
 import javafx.event.Event;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+
 //import javafx.scene.Node;
 import org.w3c.dom.Node;
 import javafx.scene.control.Button;
@@ -53,20 +55,36 @@ public class TelaCardapioController implements Initializable {
         loadView(ResourceStage.currentStage(event),
                 "src/main/resources/wasabi.sushi.app/view/telapromocao.fxml",
                 "Promoção", (PromocaoController controller) -> {
-
-           // controller.updateTableView();
+                // controller.updateTableView();
         });
     }
 
-    private void entrada(){}
-    private void temaki(){}
-    private void holl(){}
+    private void entrada(Event event){
+        loadView(ResourceStage.currentStage(event),
+                "src/main/resources/wasabi.sushi.app/view/telaentrada.fxml",
+                "Entradas", (PromocaoController controller) -> {
+
+                });
+    }
+    private void temaki(Event event){
+        loadView(ResourceStage.currentStage(event),
+                "src/main/resources/wasabi.sushi.app/view/telatemakiespecial.fxml",
+                "Temaki Especial", (PromocaoController controller) -> {
+
+                });
+    }
+    private void holl(Event event){
+        loadView(ResourceStage.currentStage(event),
+                "src/main/resources/wasabi.sushi.app/view/telahollwasabi.fxml",
+                "Holl Wasabi", (PromocaoController controller) -> {
+
+                });
+    }
 
     private synchronized <T> void loadView(Stage parentStage, String absolutName, String title, Consumer<T> initializingAction) {
         try {
             FXMLLoader loader = new FXMLLoader(getClass().getResource(absolutName));
             Pane pane = loader.load();
-
 
             tela.getChildren().addAll(pane);
 
@@ -84,5 +102,8 @@ public class TelaCardapioController implements Initializable {
 
     }
 
-
+    @FXML
+    private void onBtActionTrocarTela() throws IOException {
+        main.changeScene("Principal");
+    }
 }

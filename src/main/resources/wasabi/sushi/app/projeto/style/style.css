@@ -1,3 +1,7 @@
 .background{
+    -fx-background-color: #c6e8ff;
+}
+
+.text{
     -fx-background-color: #d1edff;
 }
