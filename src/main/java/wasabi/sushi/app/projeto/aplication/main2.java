@@ -5,12 +5,11 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.layout.BorderPane;
-import javafx.stage.Modality;
 import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class main extends Application {
+public class main2 extends Application {
     private static Scene principalScene;
     private static Scene cardapioScene;
     private static Stage stage;
@@ -22,7 +21,7 @@ public class main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception {
         stage = primaryStage;
-        Parent fxmlLogin = FXMLLoader.load(main.class.getResource("/wasabi/sushi/app/projeto/view/telaprincipal.fxml"));
+        Parent fxmlLogin = FXMLLoader.load(Main.class.getResource("/wasabi/sushi/app/projeto/view/telacadastro.fxml"));
         principalScene = new Scene(fxmlLogin, 600, 500);
 
         primaryStage.setTitle("Wasabi Sushi App");
@@ -34,7 +33,7 @@ public class main extends Application {
     private static void setScene() {
         try {
             //SplitPane fxmlHome = FXMLLoader.load(Main.class.getResource("/br/com/cdp/balanca/view/home.fxml"));
-            BorderPane fxmlHome = FXMLLoader.load(main.class.getResource("/wasabi/sushi/app/projeto/view/telacardapio.fxml"));
+            BorderPane fxmlHome = FXMLLoader.load(Main.class.getResource("/wasabi/sushi/app/projeto/view/telacardapio.fxml"));
             cardapioScene = new Scene(fxmlHome);
 
             stage.setTitle("Wasabi Sushi App");
@@ -46,17 +45,6 @@ public class main extends Application {
             e.printStackTrace();
         }
     }
-
-    /*@Override
-    public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(main.class.getResource("/wasabi/sushi/app/projeto/view/telaprincipal.fxml"));
-        principalScene = new Scene(fxmlLoader.load(), 600, 500);
-
-        stage.setTitle("Wasabi Sushi App");
-        stage.setResizable(false);
-        stage.setScene(principalScene);
-        stage.show();
-    }*/
 
     public static void changeScene(String tela) {
         switch (tela) {
@@ -75,7 +63,21 @@ public class main extends Application {
     }
 
     public static Scene getScene() {
-        return cardapioScene;
+        return principalScene;
     }
+
+    /*
+    @Override
+    public void start(Stage primaryStage) throws IOException {
+        stage = primaryStage;
+        FXMLLoader fxmlLoader = new FXMLLoader(main.class.getResource("/wasabi/sushi/app/projeto/view/telaprincipal.fxml"));
+        principalScene = new Scene(fxmlLoader.load(), 600, 500);
+
+        primaryStage.setTitle("Wasabi Sushi App");
+        primaryStage.setResizable(false);
+        primaryStage.setScene(principalScene);
+        primaryStage.show();
+    }
+    }*/
 
 }

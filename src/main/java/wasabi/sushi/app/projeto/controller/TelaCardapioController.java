@@ -1,6 +1,5 @@
 package wasabi.sushi.app.projeto.controller;
 
-import wasabi.sushi.app.projeto.aplication.main;
 import javafx.event.Event;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -34,6 +33,9 @@ public class TelaCardapioController implements Initializable {
     private Button btnHoll;
 
     @FXML
+    private Button btnVoltar;
+
+    @FXML
     private Pane tela = new Pane();
 
     private final List<Node> children = new ArrayList<>();
@@ -55,7 +57,7 @@ public class TelaCardapioController implements Initializable {
         loadView(ResourceStage.currentStage(event),
                 "src/main/resources/wasabi.sushi.app/view/telapromocao.fxml",
                 "Promoção", (PromocaoController controller) -> {
-                // controller.updateTableView();
+
         });
     }
 
@@ -102,8 +104,4 @@ public class TelaCardapioController implements Initializable {
 
     }
 
-    @FXML
-    private void onBtActionTrocarTela() throws IOException {
-        main.changeScene("Principal");
-    }
 }

@@ -128,7 +128,7 @@
                         <!-- Default configuration for running with: mvn clean javafx:run -->
                         <id>default-cli</id>
                         <configuration>
-                            <mainClass>wasabi.sushi.app.projeto/wasabi.sushi.app.projeto.aplication.main</mainClass>
+                            <mainClass>wasabi.sushi.app.projeto/wasabi.sushi.app.projeto.aplication.Main</mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>
                             <jlinkImageName>app</jlinkImageName>

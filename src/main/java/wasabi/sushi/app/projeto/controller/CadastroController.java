@@ -1,10 +1,12 @@
 package wasabi.sushi.app.projeto.controller;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Button;
 import javafx.scene.control.RadioButton;
 import javafx.scene.control.TextField;
-import javafx.scene.image.ImageView;
+import wasabi.sushi.app.projeto.aplication.Main;
 
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -23,7 +25,9 @@ public class CadastroController implements Initializable {
     @FXML
     private RadioButton dinheiro;
     @FXML
-    private ImageView setaVoltar;
+    private Button btnVoltar;
+    @FXML
+    private Button btnFinalizar;
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
@@ -31,8 +35,9 @@ public class CadastroController implements Initializable {
     }
 
     @FXML
-    public void getVoltarTelaInicial(){
-
+    private void onBtnVoltarTelaInicial(ActionEvent e){
+        Main.changeScreen("Main");
     }
+
 
 }
