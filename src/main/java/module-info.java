@@ -10,6 +10,7 @@ module wasabi.sushi.app.projeto {
     requires org.kordamp.bootstrapfx.core;
     requires eu.hansolo.tilesfx;
     requires com.almasb.fxgl.all;
+    requires java.persistence;
 
 
     exports wasabi.sushi.app.projeto.aplication;
