@@ -12,7 +12,7 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Text?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="">
    <children>
       <AnchorPane layoutY="68.0" prefHeight="434.0" prefWidth="600.0">
          <children>
@@ -26,17 +26,18 @@
             <TextField fx:id="field_endereco" layoutX="95.0" layoutY="78.0" prefHeight="26.0" prefWidth="465.0" />
             <TextField fx:id="field_telefone" layoutX="383.0" layoutY="122.0" prefHeight="26.0" prefWidth="177.0" />
             <Text layoutX="29.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Forma de Pagamento:" />
-            <RadioButton fx:id="btnDinheiro" layoutX="176.0" layoutY="153.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="110.0" text="Dinheiro" />
-            <RadioButton fx:id="btnCartaoCredito" layoutX="278.0" layoutY="153.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="177.0" text="Cartão de Crédito" />
+            <RadioButton fx:id="btnDinheiro" layoutX="169.0" layoutY="153.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="98.0" text="Dinheiro" />
+            <RadioButton fx:id="btnCartaoCredito" layoutX="262.0" layoutY="154.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="177.0" text="Cartão de Crédito" />
             <Text layoutX="27.0" layoutY="212.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pedidos:" />
             <Line endX="437.0" layoutX="125.0" layoutY="190.0" startX="-100.0" stroke="#0000008f" />
-            <Button fx:id="btnVoltar" layoutX="26.0" layoutY="383.0" mnemonicParsing="false" text="voltar" />
+            <Button fx:id="btnVoltar" layoutX="26.0" layoutY="383.0" mnemonicParsing="false" onAction="#onBtnVoltarTelaInicial" text="voltar" />
             <Button fx:id="btnFinalizar" layoutX="112.0" layoutY="383.0" mnemonicParsing="false" text="Finalizar" />
             <ScrollPane layoutX="88.0" layoutY="200.0" prefHeight="172.0" prefWidth="473.0">
               <content>
                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="171.0" prefWidth="460.0" />
               </content>
             </ScrollPane>
+            <TextField fx:id="idNumeroCartao" layoutX="411.0" layoutY="156.0" prefHeight="26.0" prefWidth="170.0" />
          </children>
       </AnchorPane>
       <AnchorPane prefHeight="74.0" prefWidth="600.0">

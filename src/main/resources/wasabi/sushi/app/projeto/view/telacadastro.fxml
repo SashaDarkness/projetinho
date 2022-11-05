@@ -25,10 +25,9 @@
             <Text layoutX="44.0" layoutY="218.0" strokeType="OUTSIDE" strokeWidth="0.0" text="FORMA DE PAGAMENTO:" />
             <RadioButton fx:id="cartao" layoutX="328.0" layoutY="198.0" mnemonicParsing="false" text="Cartão de Crédito" />
             <RadioButton fx:id="dinheiro" layoutX="216.0" layoutY="198.0" mnemonicParsing="false" text="Dinheiro" />
-            <Button fx:id="btnVoltar" layoutX="58.0" layoutY="265.0" mnemonicParsing="false" text="voltar" />
+            <Button fx:id="btnVoltar" layoutX="58.0" layoutY="265.0" mnemonicParsing="false" onAction="#onBtnVoltarTelaInicial" text="voltar" />
             <Button fx:id="btnFinalizar" layoutX="142.0" layoutY="265.0" mnemonicParsing="false" text="Finalizar" />
             <TextField fx:id="idNumeroCartao" layoutX="328.0" layoutY="239.0" prefHeight="26.0" prefWidth="252.0" visible="false" />
-            <TextField fx:id="idNumeroCartao" layoutX="342.0" layoutY="239.0" prefHeight="26.0" prefWidth="225.0" visible="false" />
          </children>
       </AnchorPane>
       <ToolBar prefHeight="59.0" prefWidth="600.0">

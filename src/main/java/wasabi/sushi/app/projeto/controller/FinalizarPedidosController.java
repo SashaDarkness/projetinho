@@ -11,35 +11,32 @@ import wasabi.sushi.app.projeto.aplication.Main;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class CadastroController implements Initializable {
+public class FinalizarPedidosController implements Initializable {
     @FXML
-    private TextField nome;
+    private TextField field_nome;
     @FXML
-    private TextField endereco;
+    private TextField field_endereco;
     @FXML
-    private TextField telefone;
+    private TextField field_email;
     @FXML
-    private TextField email;
+    private TextField field_telefone;
     @FXML
-    private RadioButton cartao;
+    private RadioButton btnDinheiro;
     @FXML
-    private RadioButton dinheiro;
+    private RadioButton btnCartaoCredito;
+    @FXML
+    private TextField idNumeroCartao;
     @FXML
     private Button btnVoltar;
     @FXML
     private Button btnFinalizar;
-    @FXML
-    private TextField idNumeroCartao;
 
     @Override
-    public void initialize(URL url, ResourceBundle resourceBundle) {
+    public void initialize(URL location, ResourceBundle resources) {
 
     }
-
     @FXML
     private void onBtnVoltarTelaInicial(ActionEvent e){
         Main.changeScreen("main");
     }
-
-
 }
