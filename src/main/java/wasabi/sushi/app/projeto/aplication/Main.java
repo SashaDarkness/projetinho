@@ -15,7 +15,6 @@ public class Main extends Application {
     private static Scene listarpedidosScene;
     private static Scene finalizarScene;
 
-
     public static void main(String[] args) {
         launch();
     }
@@ -28,7 +27,7 @@ public class Main extends Application {
         telaprincipalScene =  new Scene(fxmlMain,600,500);
 
         Parent fxmlCadastro = FXMLLoader.load(getClass().getResource("/wasabi/sushi/app/projeto/view/telacadastro.fxml"));
-        cadastrarScene =  new Scene(fxmlCadastro,600,500);
+        cadastrarScene =  new Scene(fxmlCadastro,600,400);
 
         Parent fxmlCardapio = FXMLLoader.load(getClass().getResource("/wasabi/sushi/app/projeto/view/telacardapio.fxml"));
         cardapioScene =  new Scene(fxmlCardapio,600,500);

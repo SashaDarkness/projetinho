@@ -23,10 +23,11 @@
             <Text layoutX="44.0" layoutY="128.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TELEFONE:" />
             <Text layoutX="44.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" text="EMAIL:" />
             <Text layoutX="44.0" layoutY="218.0" strokeType="OUTSIDE" strokeWidth="0.0" text="FORMA DE PAGAMENTO:" />
-            <RadioButton fx:id="cartao" layoutX="210.0" layoutY="205.0" mnemonicParsing="false" text="Cartão de Crédito" />
-            <RadioButton fx:id="dinheiro" layoutX="355.0" layoutY="205.0" mnemonicParsing="false" text="Dinheiro" />
+            <RadioButton fx:id="cartao" layoutX="328.0" layoutY="198.0" mnemonicParsing="false" text="Cartão de Crédito" />
+            <RadioButton fx:id="dinheiro" layoutX="216.0" layoutY="198.0" mnemonicParsing="false" text="Dinheiro" />
             <Button fx:id="btnVoltar" layoutX="58.0" layoutY="265.0" mnemonicParsing="false" text="voltar" />
             <Button fx:id="btnFinalizar" layoutX="142.0" layoutY="265.0" mnemonicParsing="false" text="Finalizar" />
+            <TextField fx:id="idNumeroCartao" layoutX="328.0" layoutY="239.0" prefHeight="26.0" prefWidth="252.0" visible="false" />
          </children>
       </AnchorPane>
       <ToolBar prefHeight="59.0" prefWidth="600.0">

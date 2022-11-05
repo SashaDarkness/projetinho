@@ -3,7 +3,7 @@ package wasabi.sushi.app.projeto.banco;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "cliente", schema = "formacaojava", catalog = "")
+@Table(name = "cliente", schema = "trabalho_netbiis", catalog = "")
 public class ClienteEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
