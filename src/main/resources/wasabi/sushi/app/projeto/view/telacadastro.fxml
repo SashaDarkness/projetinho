@@ -17,7 +17,7 @@
             <Text layoutX="44.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NOME:" />
             <TextField fx:id="nome" layoutX="119.0" layoutY="25.0" prefHeight="25.0" prefWidth="279.0" />
             <TextField fx:id="endereco" layoutX="119.0" layoutY="70.0" prefHeight="25.0" prefWidth="279.0" />
-            <TextField fx:id="telefone" layoutX="119.0" layoutY="111.0" prefHeight="25.0" prefWidth="209.0" />
+            <TextField fx:id="telefone" layoutX="119.0" layoutY="111.0" prefHeight="26.0" prefWidth="190.0" />
             <TextField fx:id="email" layoutX="119.0" layoutY="151.0" prefHeight="25.0" prefWidth="279.0" />
             <Text layoutX="44.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ENDEREÇO:" />
             <Text layoutX="44.0" layoutY="128.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TELEFONE:" />
@@ -28,6 +28,8 @@
             <Button fx:id="btnVoltar" layoutX="58.0" layoutY="265.0" mnemonicParsing="false" onAction="#onBtnVoltarTelaInicial" text="voltar" />
             <Button fx:id="btnFinalizar" layoutX="142.0" layoutY="265.0" mnemonicParsing="false" text="Finalizar" />
             <TextField fx:id="idNumeroCartao" layoutX="328.0" layoutY="239.0" prefHeight="26.0" prefWidth="252.0" visible="false" />
+            <Text layoutX="328.0" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CPF:" />
+            <TextField fx:id="cpf" layoutX="372.0" layoutY="119.0" />
          </children>
       </AnchorPane>
       <ToolBar prefHeight="59.0" prefWidth="600.0">

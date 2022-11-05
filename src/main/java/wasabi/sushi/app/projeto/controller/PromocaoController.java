@@ -17,12 +17,10 @@ public class PromocaoController  implements Initializable {
     private Button addProm03;
     @FXML
     private Button addProm04;
-    @FXML
-    private Pane telapromocao;
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        telapromocao.getChildren();
+
     }
 
 }

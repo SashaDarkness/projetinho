@@ -40,7 +40,9 @@ public class TelaCardapioController implements Initializable {
     private Button btnVoltar;
 
     @FXML
-    private Pane telapratos = new Pane();
+    private Pane tela;
+    @FXML
+    private Pane telacardapio;
 
     private final List<Node> children = new ArrayList<>();
 
@@ -56,6 +58,7 @@ public class TelaCardapioController implements Initializable {
 
     }
 
+    //ACTION DE ATALHO DE TECLAS
     @FXML
     private void handleOnKeyReleased(KeyEvent event){
         if(event.getCode() == KeyCode.F2){
@@ -74,7 +77,7 @@ public class TelaCardapioController implements Initializable {
 
     private void promocao(Event event){
         loadView(ResourceStage.currentStage(event),
-                "src/main/resources/wasabi.sushi.app/view/telapromocao.fxml",
+                "/wasabi/sushi/app/projeto/view/telapromocao.fxml",
                 "Promoção", (PromocaoController controller) -> {
 
         });
@@ -82,26 +85,25 @@ public class TelaCardapioController implements Initializable {
 
     private void entrada(Event event){
         loadView(ResourceStage.currentStage(event),
-                "src/main/resources/wasabi.sushi.app/view/telaentrada.fxml",
+                "/wasabi/sushi/app/projeto/view/telaentradas.fxml",
                 "Entradas", (EntradaController controller) -> {
 
                 });
     }
     private void temaki(Event event){
         loadView(ResourceStage.currentStage(event),
-                "src/main/resources/wasabi.sushi.app/view/telatemakiespecial.fxml",
+                "/wasabi/sushi/app/projeto/view/telatemakiespecial.fxml",
                 "Temaki Especial", (TemakiEspecialController controller) -> {
 
                 });
     }
     private void holl(Event event){
         loadView(ResourceStage.currentStage(event),
-                "src/main/resources/wasabi.sushi.app/view/telahollwasabi.fxml",
+                "/wasabi/sushi/app/projeto/view/telahollwasabi.fxml",
                 "Holl Wasabi", (HollWasabiController controller) -> {
-                    //controller.setPesagemServices(new ClienteService());
+                    //controller.setServices(new ClienteService());
                 });
     }
-
 
     @FXML
     private void onBtActionPromocao(ActionEvent event) {
@@ -125,7 +127,7 @@ public class TelaCardapioController implements Initializable {
             FXMLLoader loader = new FXMLLoader(getClass().getResource(absolutName));
             Pane pane = loader.load();
 
-            telapratos.getChildren().addAll(pane);
+            tela.getChildren().addAll(pane);
 
             T controller = loader.getController();
             initializingAction.accept(controller);
@@ -138,11 +140,11 @@ public class TelaCardapioController implements Initializable {
         } catch (RuntimeException e) {
             System.out.println(e.getMessage());
         }
-
     }
 
+
     @FXML
-    private void onBtnVoltarTelaInicial(ActionEvent e){
+    private void onBtnVoltarTelaInicial() throws IOException {
         Main.changeScreen("main");
     }
 
