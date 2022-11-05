@@ -83,21 +83,21 @@ public class TelaCardapioController implements Initializable {
     private void entrada(Event event){
         loadView(ResourceStage.currentStage(event),
                 "src/main/resources/wasabi.sushi.app/view/telaentrada.fxml",
-                "Entradas", (PromocaoController controller) -> {
+                "Entradas", (EntradaController controller) -> {
 
                 });
     }
     private void temaki(Event event){
         loadView(ResourceStage.currentStage(event),
                 "src/main/resources/wasabi.sushi.app/view/telatemakiespecial.fxml",
-                "Temaki Especial", (PromocaoController controller) -> {
+                "Temaki Especial", (TemakiEspecialController controller) -> {
 
                 });
     }
     private void holl(Event event){
         loadView(ResourceStage.currentStage(event),
                 "src/main/resources/wasabi.sushi.app/view/telahollwasabi.fxml",
-                "Holl Wasabi", (PromocaoController controller) -> {
+                "Holl Wasabi", (HollWasabiController controller) -> {
                     //controller.setPesagemServices(new ClienteService());
                 });
     }
