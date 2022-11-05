@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" styleClass="background" stylesheets="@../style/style.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="wasabi.sushi.app.projeto.controller.TelaCardapioController">
+<Pane onKeyPressed="#handleOnKeyReleased"  maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" styleClass="background" stylesheets="@../style/style.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="wasabi.sushi.app.projeto.controller.TelaCardapioController">
    <children>
       <AnchorPane layoutY="85.0" prefHeight="416.0" prefWidth="600.0">
          <children>
@@ -31,10 +31,10 @@
                      </image>
                   </ImageView>
                   <Button fx:id="btnVoltar" mnemonicParsing="false" onAction="#onBtnVoltarTelaInicial" text="VOLTAR" />
-                  <Button fx:id="btnPromocao" mnemonicParsing="false" onAction="promocao" text="PROMOÇÃO" textAlignment="CENTER" />
-                  <Button fx:id="btnEntradas" mnemonicParsing="false" prefHeight="25.0" prefWidth="83.0" text="ENTRADAS" textAlignment="CENTER" />
-                  <Button fx:id="btnTemaki" mnemonicParsing="false" text="TEMAKI ESPECIAL" textAlignment="CENTER" />
-                  <Button fx:id="btnHoll" mnemonicParsing="false" text="HOLL WASABI" textAlignment="CENTER" />
+                  <Button fx:id="btnPromocao" mnemonicParsing="false" onAction="#onBtActionPromocao" text="PROMOÇÃO" textAlignment="CENTER" />
+                  <Button fx:id="btnEntradas" mnemonicParsing="false" onAction="#onBtActionEntrada" prefHeight="25.0" prefWidth="83.0" text="ENTRADAS" textAlignment="CENTER" />
+                  <Button fx:id="btnTemaki" mnemonicParsing="false" onAction="#onBtActionTemaki" text="TEMAKI ESPECIAL" textAlignment="CENTER" />
+                  <Button fx:id="btnHoll" mnemonicParsing="false" onAction="#onBtActionHoll" text="HOLL WASABI" textAlignment="CENTER" />
                </items>
             </ToolBar>
          </children>

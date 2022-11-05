@@ -7,6 +7,8 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 
 //import javafx.scene.Node;
+import javafx.scene.input.KeyCode;
+import javafx.scene.input.KeyEvent;
 import org.w3c.dom.Node;
 import javafx.scene.control.Button;
 import javafx.scene.layout.Pane;
@@ -54,6 +56,22 @@ public class TelaCardapioController implements Initializable {
 
     }
 
+    @FXML
+    private void handleOnKeyReleased(KeyEvent event){
+        if(event.getCode() == KeyCode.F2){
+            promocao(event);
+        }
+        if(event.getCode() == KeyCode.F3){
+           entrada(event);
+        }
+        if(event.getCode() == KeyCode.F4){
+            temaki(event);
+        }
+        if (event.getCode() == KeyCode.F5){
+            holl(event);
+        }
+    }
+
     private void promocao(Event event){
         loadView(ResourceStage.currentStage(event),
                 "src/main/resources/wasabi.sushi.app/view/telapromocao.fxml",
@@ -80,8 +98,26 @@ public class TelaCardapioController implements Initializable {
         loadView(ResourceStage.currentStage(event),
                 "src/main/resources/wasabi.sushi.app/view/telahollwasabi.fxml",
                 "Holl Wasabi", (PromocaoController controller) -> {
-
+                    //controller.setPesagemServices(new ClienteService());
                 });
+    }
+
+
+    @FXML
+    private void onBtActionPromocao(ActionEvent event) {
+        promocao(event);
+    }
+    @FXML
+    private void onBtActionEntrada(ActionEvent event) {
+        entrada(event);
+    }
+    @FXML
+    private void onBtActionTemaki(ActionEvent event) {
+        temaki(event);
+    }
+    @FXML
+    private void onBtActionHoll(ActionEvent event) {
+        holl(event);
     }
 
     private synchronized <T> void loadView(Stage parentStage, String absolutName, String title, Consumer<T> initializingAction) {
