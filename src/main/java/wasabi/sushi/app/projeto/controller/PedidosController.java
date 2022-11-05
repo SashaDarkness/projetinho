@@ -18,6 +18,10 @@ public class PedidosController implements Initializable {
 
     }
 
+    public static void pedidosRealizados(){
+
+    }
+
 
     @FXML
     private void onBtnVoltarTelaInicial(ActionEvent e){

@@ -30,7 +30,7 @@ public class Main extends Application {
         cadastrarScene =  new Scene(fxmlCadastro,600,400);
 
         Parent fxmlCardapio = FXMLLoader.load(getClass().getResource("/wasabi/sushi/app/projeto/view/telacardapio.fxml"));
-        cardapioScene =  new Scene(fxmlCardapio,600,500);
+        cardapioScene =  new Scene(fxmlCardapio,600,600);
 
         Parent fxmlListar = FXMLLoader.load(getClass().getResource("/wasabi/sushi/app/projeto/view/listarpedidos.fxml"));
         listarpedidosScene =  new Scene(fxmlListar,600,500);

@@ -3,7 +3,7 @@
                  version="3.0">
 
     <entity class="wasabi.sushi.app.projeto.banco.ClienteEntity">
-        <table name="cliente" schema="formacaojava" catalog=""/>
+        <table name="cliente" schema="trabalho_netbiis" catalog=""/>
         <attributes>
             <id name="idCliente">
                 <column name="idCliente"/>
@@ -20,7 +20,7 @@
         </attributes>
     </entity>
     <entity class="wasabi.sushi.app.projeto.banco.EntradasEntity">
-        <table name="entradas" schema="formacaojava" catalog=""/>
+        <table name="entradas" schema="trabalho_netbiis" catalog=""/>
         <attributes>
             <id name="idEntradas">
                 <column name="idEntradas"/>
@@ -37,7 +37,7 @@
         </attributes>
     </entity>
     <entity class="wasabi.sushi.app.projeto.banco.HollWasabiEntity">
-        <table name="holl_wasabi" schema="formacaojava" catalog=""/>
+        <table name="holl_wasabi" schema="trabalho_netbiis" catalog=""/>
         <attributes>
             <id name="idHollWasabi">
                 <column name="idHoll_Wasabi"/>
@@ -54,7 +54,7 @@
         </attributes>
     </entity>
     <entity class="wasabi.sushi.app.projeto.banco.PagamentoEntity">
-        <table name="numero_cartao" schema="formacaojava" catalog=""/>
+        <table name="numero_cartao" schema="trabalho_netbiis" catalog=""/>
         <attributes>
             <id name="idNumeroCartao">
                 <column name="idNumero_Cartao"/>
@@ -71,7 +71,7 @@
         </attributes>
     </entity>
     <entity class="wasabi.sushi.app.projeto.banco.PagamentoEntity">
-        <table name="pedido" schema="formacaojava" catalog=""/>
+        <table name="pedido" schema="trabalho_netbiis" catalog=""/>
         <attributes>
             <id name="idPedido">
                 <column name="idPedido"/>
@@ -94,7 +94,7 @@
         </attributes>
     </entity>
     <entity class="wasabi.sushi.app.projeto.banco.ProdutoEntity">
-        <table name="produto" schema="formacaojava" catalog=""/>
+        <table name="produto" schema="trabalho_netbiis" catalog=""/>
         <attributes>
             <id name="idProduto">
                 <column name="idProduto"/>
@@ -117,7 +117,7 @@
         </attributes>
     </entity>
     <entity class="wasabi.sushi.app.projeto.banco.PromocaoEntity">
-        <table name="promocao" schema="formacaojava" catalog=""/>
+        <table name="promocao" schema="trabalho_netbiis" catalog=""/>
         <attributes>
             <id name="idPromocao">
                 <column name="idPromocao"/>
@@ -134,7 +134,7 @@
         </attributes>
     </entity>
     <entity class="wasabi.sushi.app.projeto.banco.TemakiEspecialEntity">
-        <table name="temaki_especial" schema="formacaojava" catalog=""/>
+        <table name="temaki_especial" schema="trabalho_netbiis" catalog=""/>
         <attributes>
             <id name="idTemakiEspecial">
                 <column name="idTemaki_Especial"/>

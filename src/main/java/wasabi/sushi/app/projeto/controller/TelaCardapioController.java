@@ -7,6 +7,8 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 
 //import javafx.scene.Node;
+import javafx.scene.input.KeyCode;
+import javafx.scene.input.KeyEvent;
 import org.w3c.dom.Node;
 import javafx.scene.control.Button;
 import javafx.scene.layout.Pane;
@@ -38,7 +40,9 @@ public class TelaCardapioController implements Initializable {
     private Button btnVoltar;
 
     @FXML
-    private Pane tela = new Pane();
+    private Pane tela;
+    @FXML
+    private Pane telacardapio;
 
     private final List<Node> children = new ArrayList<>();
 
@@ -54,9 +58,26 @@ public class TelaCardapioController implements Initializable {
 
     }
 
+    //ACTION DE ATALHO DE TECLAS
+    @FXML
+    private void handleOnKeyReleased(KeyEvent event){
+        if(event.getCode() == KeyCode.F2){
+            promocao(event);
+        }
+        if(event.getCode() == KeyCode.F3){
+           entrada(event);
+        }
+        if(event.getCode() == KeyCode.F4){
+            temaki(event);
+        }
+        if (event.getCode() == KeyCode.F5){
+            holl(event);
+        }
+    }
+
     private void promocao(Event event){
         loadView(ResourceStage.currentStage(event),
-                "src/main/resources/wasabi.sushi.app/view/telapromocao.fxml",
+                "/wasabi/sushi/app/projeto/view/telapromocao.fxml",
                 "Promoção", (PromocaoController controller) -> {
 
         });
@@ -64,24 +85,41 @@ public class TelaCardapioController implements Initializable {
 
     private void entrada(Event event){
         loadView(ResourceStage.currentStage(event),
-                "src/main/resources/wasabi.sushi.app/view/telaentrada.fxml",
-                "Entradas", (PromocaoController controller) -> {
+                "/wasabi/sushi/app/projeto/view/telaentradas.fxml",
+                "Entradas", (EntradaController controller) -> {
 
                 });
     }
     private void temaki(Event event){
         loadView(ResourceStage.currentStage(event),
-                "src/main/resources/wasabi.sushi.app/view/telatemakiespecial.fxml",
-                "Temaki Especial", (PromocaoController controller) -> {
+                "/wasabi/sushi/app/projeto/view/telatemakiespecial.fxml",
+                "Temaki Especial", (TemakiEspecialController controller) -> {
 
                 });
     }
     private void holl(Event event){
         loadView(ResourceStage.currentStage(event),
-                "src/main/resources/wasabi.sushi.app/view/telahollwasabi.fxml",
-                "Holl Wasabi", (PromocaoController controller) -> {
-
+                "/wasabi/sushi/app/projeto/view/telahollwasabi.fxml",
+                "Holl Wasabi", (HollWasabiController controller) -> {
+                    //controller.setServices(new ClienteService());
                 });
+    }
+
+    @FXML
+    private void onBtActionPromocao(ActionEvent event) {
+        promocao(event);
+    }
+    @FXML
+    private void onBtActionEntrada(ActionEvent event) {
+        entrada(event);
+    }
+    @FXML
+    private void onBtActionTemaki(ActionEvent event) {
+        temaki(event);
+    }
+    @FXML
+    private void onBtActionHoll(ActionEvent event) {
+        holl(event);
     }
 
     private synchronized <T> void loadView(Stage parentStage, String absolutName, String title, Consumer<T> initializingAction) {
@@ -102,11 +140,11 @@ public class TelaCardapioController implements Initializable {
         } catch (RuntimeException e) {
             System.out.println(e.getMessage());
         }
-
     }
 
+
     @FXML
-    private void onBtnVoltarTelaInicial(ActionEvent e){
+    private void onBtnVoltarTelaInicial() throws IOException {
         Main.changeScreen("main");
     }
 
