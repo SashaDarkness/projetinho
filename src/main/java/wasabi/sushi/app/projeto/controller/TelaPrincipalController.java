@@ -39,7 +39,7 @@ public class TelaPrincipalController implements Initializable {
     }
     @FXML
     protected void actionCardapio(ActionEvent e){
-        Main.changeScreen("cardapioScene");
+        Main.changeScreen("cardapio");
     }
     @FXML
     protected void actionListarPedidos(ActionEvent e){
