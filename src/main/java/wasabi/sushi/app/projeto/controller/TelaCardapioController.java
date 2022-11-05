@@ -1,5 +1,6 @@
 package wasabi.sushi.app.projeto.controller;
 
+import javafx.event.ActionEvent;
 import javafx.event.Event;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -10,6 +11,7 @@ import org.w3c.dom.Node;
 import javafx.scene.control.Button;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
+import wasabi.sushi.app.projeto.aplication.Main;
 import wasabi.sushi.app.projeto.utils.*;
 
 import java.io.IOException;
@@ -49,8 +51,7 @@ public class TelaCardapioController implements Initializable {
         initializeNodes();
     }
     private void initializeNodes() {
-        //lblUser.setText(Main.getDataUser().getNome());
-        //getDateSystem();
+
     }
 
     private void promocao(Event event){
@@ -102,6 +103,11 @@ public class TelaCardapioController implements Initializable {
             System.out.println(e.getMessage());
         }
 
+    }
+
+    @FXML
+    private void onBtnVoltarTelaInicial(ActionEvent e){
+        Main.changeScreen("main");
     }
 
 }

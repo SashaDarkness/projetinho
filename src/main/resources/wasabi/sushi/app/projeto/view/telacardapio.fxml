@@ -30,8 +30,8 @@
                         <Image url="@../imagem/wasabi.png" />
                      </image>
                   </ImageView>
-                  <Button fx:id="btnVoltar" mnemonicParsing="false" text="VOLTAR" />
-                  <Button fx:id="btnPromocao" mnemonicParsing="false" text="PROMOÇÃO" textAlignment="CENTER" />
+                  <Button fx:id="btnVoltar" mnemonicParsing="false" onAction="#onBtnVoltarTelaInicial" text="VOLTAR" />
+                  <Button fx:id="btnPromocao" mnemonicParsing="false" onAction="promocao" text="PROMOÇÃO" textAlignment="CENTER" />
                   <Button fx:id="btnEntradas" mnemonicParsing="false" prefHeight="25.0" prefWidth="83.0" text="ENTRADAS" textAlignment="CENTER" />
                   <Button fx:id="btnTemaki" mnemonicParsing="false" text="TEMAKI ESPECIAL" textAlignment="CENTER" />
                   <Button fx:id="btnHoll" mnemonicParsing="false" text="HOLL WASABI" textAlignment="CENTER" />
