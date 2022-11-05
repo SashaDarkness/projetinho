@@ -1,6 +1,7 @@
 package wasabi.sushi.app.projeto.controller;
 
 import javafx.event.ActionEvent;
+import javafx.event.Event;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
@@ -31,10 +32,21 @@ public class CadastroController implements Initializable {
     @FXML
     private TextField idNumeroCartao;
 
+    @FXML
+    private TextField cpf;
+
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
     }
+
+    private void cadastrar(Event e){
+
+    }
+//    @FXML
+//    private void onBtnVoltarTelaInicial(ActionEvent e){
+//
+//    }
 
     @FXML
     private void onBtnVoltarTelaInicial(ActionEvent e){
