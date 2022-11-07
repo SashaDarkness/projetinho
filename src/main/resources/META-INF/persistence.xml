@@ -3,7 +3,7 @@
              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
              xsi:schemaLocation="https://jakarta.ee/xml/ns/persistence https://jakarta.ee/xml/ns/persistence/persistence_3_0.xsd"
              version="3.0">
-  <persistence-unit name="default">
+  <persistence-unit name="default" transaction-type="RESOURCE_LOCAL">
       <mapping-file>META-INF/orm.xml</mapping-file>
       <class>wasabi.sushi.app.projeto.banco.ClienteEntity</class>
       <class>wasabi.sushi.app.projeto.banco.EntradasEntity</class>
@@ -16,10 +16,13 @@
       <class>wasabi.sushi.app.projeto.banco.PedidoEntity</class>
 
       <properties>
+          <property name="hibernate.ejb.cfgfile"
+                    value="hibernate.cfg.xml" />
           <property name="openjpa.ConnectionURL" value="jdbc:mariadb://localhost:3306/trabalho_netbiis"/>
           <property name="openjpa.ConnectionDriverName" value="org.mariadb.jdbc.Driver"/>
           <property name="openjpa.ConnectionUserName" value="root"/>
           <property name="openjpa.ConnectionPassword" value="12345"/>
+
       </properties>
   </persistence-unit>
 </persistence>
