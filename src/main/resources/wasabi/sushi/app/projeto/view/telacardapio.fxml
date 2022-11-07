@@ -1,34 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ToolBar?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
 
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#handleOnKeyReleased" prefHeight="600.0" prefWidth="600.0" styleClass="background" stylesheets="@../style/style.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="wasabi.sushi.app.projeto.controller.TelaCardapioController">
    <children>
-      <AnchorPane layoutY="85.0" prefHeight="519.0" prefWidth="600.0">
+      <AnchorPane layoutY="64.0" prefHeight="537.0" prefWidth="600.0">
          <children>
-            <Pane fx:id="tela" layoutY="-4.0" prefHeight="422.0" prefWidth="600.0" />
+            <Pane fx:id="tela" layoutY="7.0" prefHeight="526.0" prefWidth="600.0" />
          </children></AnchorPane>
       <AnchorPane prefHeight="40.0" prefWidth="600.0">
          <children>
-            <ToolBar prefHeight="52.0" prefWidth="600.0">
+            <ToolBar prefHeight="65.0" prefWidth="600.0">
                <items>
-                  <ImageView fitHeight="75.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../imagem/wasabi.png" />
-                     </image>
-                  </ImageView>
-                  <Button fx:id="btnVoltar" mnemonicParsing="false" onAction="#onBtnVoltarTelaInicial" text="VOLTAR" />
-                  <Button fx:id="btnPromocao" mnemonicParsing="false" onAction="#onBtActionPromocao" text="PROMOÇÃO" textAlignment="CENTER" />
-                  <Button fx:id="btnEntradas" mnemonicParsing="false" onAction="#onBtActionEntrada" prefHeight="25.0" prefWidth="83.0" text="ENTRADAS" textAlignment="CENTER" />
-                  <Button fx:id="btnTemaki" mnemonicParsing="false" onAction="#onBtActionTemaki" text="TEMAKI ESPECIAL" textAlignment="CENTER" />
-                  <Button fx:id="btnHoll" mnemonicParsing="false" onAction="#onBtActionHoll" text="HOLL WASABI" textAlignment="CENTER" />
-               </items>
-            </ToolBar>
+                  <GridPane prefHeight="47.0" prefWidth="574.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="108.0" minWidth="10.0" prefWidth="90.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="134.0" minWidth="10.0" prefWidth="110.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="140.0" minWidth="10.0" prefWidth="112.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="153.0" minWidth="10.0" prefWidth="142.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="121.0" minWidth="10.0" prefWidth="120.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Button fx:id="btnVoltar" mnemonicParsing="false" onAction="#onBtnVoltarTelaInicial" text="VOLTAR">
+                           <GridPane.margin>
+                              <Insets left="5.0" />
+                           </GridPane.margin></Button>
+                        <Button fx:id="btnPromocao" mnemonicParsing="false" onAction="#onBtActionPromocao" text="PROMOÇÃO" textAlignment="CENTER" GridPane.columnIndex="1" />
+                        <Button fx:id="btnEntradas" mnemonicParsing="false" onAction="#onBtActionEntrada" prefHeight="31.0" prefWidth="104.0" text="ENTRADAS" textAlignment="CENTER" GridPane.columnIndex="2" />
+                        <Button fx:id="btnTemaki" mnemonicParsing="false" onAction="#onBtActionTemaki" text="TEMAKI ESPECIAL" textAlignment="CENTER" GridPane.columnIndex="3" />
+                        <Button fx:id="btnHoll" mnemonicParsing="false" onAction="#onBtActionHoll" prefHeight="31.0" prefWidth="135.0" text="HOLL WASABI" textAlignment="CENTER" GridPane.columnIndex="4" />
+                     </children>
+                  </GridPane>
+               </items></ToolBar>
          </children>
       </AnchorPane>
    </children>

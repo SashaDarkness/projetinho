@@ -24,7 +24,7 @@ public class Main extends Application {
         stage = primaryStage;
 
         Parent fxmlMain = FXMLLoader.load(getClass().getResource("/wasabi/sushi/app/projeto/view/telaprincipal.fxml"));
-        telaprincipalScene =  new Scene(fxmlMain,600,500);
+        telaprincipalScene =  new Scene(fxmlMain,600,600);
 
         Parent fxmlCadastro = FXMLLoader.load(getClass().getResource("/wasabi/sushi/app/projeto/view/telacadastro.fxml"));
         cadastrarScene =  new Scene(fxmlCadastro,600,400);
@@ -33,10 +33,10 @@ public class Main extends Application {
         cardapioScene =  new Scene(fxmlCardapio,600,600);
 
         Parent fxmlListar = FXMLLoader.load(getClass().getResource("/wasabi/sushi/app/projeto/view/listarpedidos.fxml"));
-        listarpedidosScene =  new Scene(fxmlListar,600,500);
+        listarpedidosScene =  new Scene(fxmlListar,600,600);
 
         Parent fxmlFinalizarCompra = FXMLLoader.load(getClass().getResource("/wasabi/sushi/app/projeto/view/telapagamento.fxml"));
-        finalizarScene =  new Scene(fxmlFinalizarCompra,600,500);
+        finalizarScene =  new Scene(fxmlFinalizarCompra,600,600);
 
 
         primaryStage.setTitle("Wasabi Sushi App");

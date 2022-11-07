@@ -4,7 +4,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
-import javafx.scene.control.RadioButton;
+import javafx.scene.control.CheckBox;
 import javafx.scene.control.TextField;
 import wasabi.sushi.app.projeto.aplication.Main;
 
@@ -13,23 +13,23 @@ import java.util.ResourceBundle;
 
 public class CadastroController implements Initializable {
     @FXML
-    private TextField nome;
+    private TextField txtNome;
     @FXML
-    private TextField endereco;
+    private TextField txtEndereco;
     @FXML
-    private TextField telefone;
+    private TextField txtTelefone;
     @FXML
-    private TextField email;
+    private TextField txtEmail;
     @FXML
-    private RadioButton cartao;
+    private TextField txtNumeroCartao;
     @FXML
-    private RadioButton dinheiro;
+    private CheckBox cartao;
+    @FXML
+    private CheckBox dinheiro;
     @FXML
     private Button btnVoltar;
     @FXML
-    private Button btnFinalizar;
-    @FXML
-    private TextField idNumeroCartao;
+    private Button btnCadastrar;
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
@@ -37,7 +37,7 @@ public class CadastroController implements Initializable {
     }
 
     @FXML
-    private void onBtnVoltarTelaInicial(ActionEvent e){
+    private void onBtnVoltarTelaInicial(){
         Main.changeScreen("main");
     }
 
