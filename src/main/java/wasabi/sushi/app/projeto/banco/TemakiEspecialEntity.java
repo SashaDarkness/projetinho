@@ -1,22 +1,25 @@
 package wasabi.sushi.app.projeto.banco;
 
 import javax.persistence.*;
+import java.io.Serializable;
 
 @Entity
 @Table(name = "temaki_especial", schema = "trabalho_netbiis", catalog = "")
-public class TemakiEspecialEntity {
+public class TemakiEspecialEntity implements Serializable {
+
+    private static final long serialVersionUID = 1L;
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
-    @Column(name = "idTemaki_Especial")
+    @Column(name = "idTemaki_Especial", nullable = false)
     private int idTemakiEspecial;
     @Basic
-    @Column(name = "Nome")
+    @Column(name = "Nome", nullable = true, length = 45)
     private String nome;
     @Basic
-    @Column(name = "Valor")
+    @Column(name = "Valor", nullable = true, precision = 0)
     private Double valor;
     @Basic
-    @Column(name = "Descricao")
+    @Column(name = "Descricao", nullable = true, length = 100)
     private String descricao;
 
     public int getIdTemakiEspecial() {

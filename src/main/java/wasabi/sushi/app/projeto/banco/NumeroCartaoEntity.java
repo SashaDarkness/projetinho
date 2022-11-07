@@ -1,22 +1,25 @@
 package wasabi.sushi.app.projeto.banco;
 
 import javax.persistence.*;
+import java.io.Serializable;
 
 @Entity
 @Table(name = "numero_cartao", schema = "trabalho_netbiis", catalog = "")
-public class NumeroCartaoEntity {
+public class NumeroCartaoEntity implements Serializable {
+
+    private static final long serialVersionUID = 1L;
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
-    @Column(name = "idNumero_Cartao")
+    @Column(name = "idNumero_Cartao", nullable = false)
     private int idNumeroCartao;
     @Basic
-    @Column(name = "Cliente_idCliente")
+    @Column(name = "Cliente_idCliente", nullable = false)
     private int clienteIdCliente;
     @Basic
-    @Column(name = "Numero_Cartao")
+    @Column(name = "Numero_Cartao", nullable = true, length = 45)
     private String numeroCartao;
     @Basic
-    @Column(name = "Nome_Cartao")
+    @Column(name = "Nome_Cartao", nullable = true, length = 45)
     private String nomeCartao;
 
     public NumeroCartaoEntity(int clienteIdCliente, String numeroCartao, String nomeCartao) {

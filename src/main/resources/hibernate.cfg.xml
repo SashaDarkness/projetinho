@@ -12,7 +12,7 @@
 
     <property name="hibernate.current_session_context_class">thread</property>
 
-    <property name="connection.url">jdbc:mariadb://localhost:3306/formacao_java</property>
+    <property name="connection.url">jdbc:mariadb://localhost:3306/trabalho_netbiis</property>
     <property name="connection.driver_class">org.mariadb.jdbc.Driver</property>
     <!-- DB schema will be updated if needed -->
     <!-- <property name="hibernate.hbm2ddl.auto">update</property> -->

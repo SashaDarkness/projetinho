@@ -7,15 +7,16 @@
       <mapping-file>META-INF/orm.xml</mapping-file>
       <class>wasabi.sushi.app.projeto.banco.ClienteEntity</class>
       <class>wasabi.sushi.app.projeto.banco.EntradasEntity</class>
+      <class>wasabi.sushi.app.projeto.banco.NumeroCartaoEntity</class>
       <class>wasabi.sushi.app.projeto.banco.HollWasabiEntity</class>
-      <class>wasabi.sushi.app.projeto.banco.PagamentoEntity</class>
       <class>wasabi.sushi.app.projeto.banco.PagamentoEntity</class>
       <class>wasabi.sushi.app.projeto.banco.ProdutoEntity</class>
       <class>wasabi.sushi.app.projeto.banco.PromocaoEntity</class>
       <class>wasabi.sushi.app.projeto.banco.TemakiEspecialEntity</class>
+      <class>wasabi.sushi.app.projeto.banco.PedidoEntity</class>
 
       <properties>
-          <property name="openjpa.ConnectionURL" value="jdbc:mariadb://localhost:3306"/>
+          <property name="openjpa.ConnectionURL" value="jdbc:mariadb://localhost:3306/trabalho_netbiis"/>
           <property name="openjpa.ConnectionDriverName" value="org.mariadb.jdbc.Driver"/>
           <property name="openjpa.ConnectionUserName" value="root"/>
           <property name="openjpa.ConnectionPassword" value="12345"/>

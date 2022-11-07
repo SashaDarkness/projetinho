@@ -22,7 +22,7 @@ public class PedidoService {
 
     }
 
-    public void adicionarPedido(int idCliente, int id_produto, String valor_total, String numeroNota, String formaPagamento){
+    public void adicionarPedido(int idCliente, int id_produto, double valor_total, String numeroNota, String formaPagamento){
         EntityManager em = emf.createEntityManager();
         EntityTransaction tx = em.getTransaction();
         PagamentoEntity cliente = new PagamentoEntity(
