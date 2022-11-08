@@ -14,7 +14,6 @@
 <?import javafx.scene.text.Text?>
 
 <Pane fx:id="telaPagamento" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" styleClass="background" stylesheets="@../style/style.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="wasabi.sushi.app.projeto.controller.PedidosController">
-   <children>
       <AnchorPane layoutY="222.0" prefHeight="379.0" prefWidth="600.0">
          <children>
             <GridPane layoutX="8.0" layoutY="4.0" prefHeight="291.0" prefWidth="586.0">
@@ -89,7 +88,6 @@
                         <Insets />
                      </GridPane.margin>
                   </Text>
-                  <TextField fx:id="txtEmail" GridPane.columnIndex="1" GridPane.rowIndex="4" />
                   <Text strokeType="OUTSIDE" strokeWidth="0.0" text="CPF:" GridPane.columnIndex="2" GridPane.rowIndex="3" />
                   <TextField fx:id="txtCpf" prefHeight="30.0" prefWidth="171.0" GridPane.columnIndex="2" GridPane.rowIndex="3">
                      <GridPane.margin>
@@ -114,10 +112,17 @@
                         <Insets left="160.0" top="10.0" />
                      </GridPane.margin>
                   </CheckBox>
+                  <TextField fx:id="txtEmail" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="CPF:" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                  <TextField prefHeight="30.0" prefWidth="171.0" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                     <GridPane.margin>
+                        <Insets left="30.0" right="15.0" />
+                     </GridPane.margin>
+                  </TextField>
                   <TextField fx:id="txtNumeroCartao" visible="false" GridPane.columnIndex="2" GridPane.rowIndex="5" />
                </children>
             </GridPane>
          </children>
       </AnchorPane>
-   </children>
+
 </Pane>

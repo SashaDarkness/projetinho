@@ -36,7 +36,7 @@
             </GridPane>
             <Button fx:id="btnVoltar" layoutX="36.0" layoutY="315.0" mnemonicParsing="false" onAction="#onBtnVoltarTelaInicial" text="voltar" />
             <Button fx:id="btnFinalizarCompra" layoutX="120.0" layoutY="314.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="157.0" text="Finalizar Compra" />
-            <TextField fx:id="txtValortotal" layoutX="483.0" layoutY="307.0" prefHeight="26.0" prefWidth="72.0" />
+            <TextField fx:id="txtValortotal" layoutX="477.0" layoutY="315.0" prefHeight="26.0" prefWidth="72.0" />
             <Text layoutX="411.0" layoutY="334.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Valor total:" wrappingWidth="72.0" />
          </children>
       </AnchorPane>
@@ -57,11 +57,7 @@
                   <RowConstraints maxHeight="40.0" minHeight="10.0" prefHeight="37.0" vgrow="SOMETIMES" />
                </rowConstraints>
                <children>
-                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="FINALIZAR PEDIDO DO CLIENTE:">
-                     <GridPane.margin>
-                        <Insets />
-                     </GridPane.margin>
-                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="FINALIZAR PEDIDO DO CLIENTE:" />
                   <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Nome:" GridPane.rowIndex="1">
                      <GridPane.margin>
                         <Insets />
@@ -88,6 +84,7 @@
                      </GridPane.margin>
                   </Text>
                   <CheckBox fx:id="btnDinheiro" mnemonicParsing="false" prefHeight="19.0" prefWidth="146.0" text="Dinheiro" GridPane.columnIndex="1" GridPane.rowIndex="5">
+
                      <padding>
                         <Insets left="15.0" />
                      </padding>

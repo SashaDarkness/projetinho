@@ -27,12 +27,14 @@
     -fx-text-fill: black;
 }
 
+
 .Text-bright {
     -fx-font-size: 11pt;
     -fx-font-family: "Segoe UI Semibold";
     -fx-text-fill: white;
     -fx-opacity: 1;
 }
+
 
 .Text-header {
     -fx-font-size: 32pt;

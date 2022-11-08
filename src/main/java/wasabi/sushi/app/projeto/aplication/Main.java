@@ -4,6 +4,7 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 import java.io.IOException;
 
@@ -41,7 +42,8 @@ public class Main extends Application {
 
         primaryStage.setTitle("Wasabi Sushi App");
         primaryStage.setResizable(false);
-
+        primaryStage.getIcons().add(new Image("C:\\Users\\Darkness\\Downloads\\projeto_wasabiApp - Copia\\projeto\\src\\main\\resources\\wasabi\\sushi\\app\\projeto\\imagem\\iconwasabi.png"));
+        primaryStage.setTitle("Sistema de Triagem Mark Caeiro");
         primaryStage.setScene(telaprincipalScene);
         primaryStage.show();
 
