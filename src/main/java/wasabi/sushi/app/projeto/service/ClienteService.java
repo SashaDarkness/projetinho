@@ -6,11 +6,14 @@ import java.util.List;
 
 public class ClienteService {
 
-    EntityManagerFactory emf = Persistence.createEntityManagerFactory("default");
+    public ClienteService() {
+    }
 
+    EntityManagerFactory emf = Persistence.createEntityManagerFactory("default");
+    EntityManager em = emf.createEntityManager();
+    EntityTransaction tx = em.getTransaction();
     public List<ClienteEntity> finAllCliente(){
-        EntityManager em = emf.createEntityManager();
-        EntityTransaction tx = em.getTransaction();
+
         TypedQuery<ClienteEntity> query = em.createQuery(
                 "Select c from ClienteEntity c",ClienteEntity.class
         );
@@ -19,19 +22,15 @@ public class ClienteService {
 
     }
 
-    public void adicionarCliente(String nome, int cpf, String endereco){
-        EntityManager em = emf.createEntityManager();
-        EntityTransaction tx = em.getTransaction();
-        ClienteEntity cliente = new ClienteEntity(nome,cpf,endereco);
-        tx.begin();
-        em.persist(cliente);
-        tx.commit();
-        em.close();
-    }
+//    public void adicionarCliente(String nome, int cpf, String endereco,String email, String telefone){
+  //      ClienteEntity cliente = new ClienteEntity(nome,cpf,endereco,email,telefone);
+//        tx.begin();
+//        em.persist(cliente);
+//        tx.commit();
+//        em.close();
+//    }
 
     public void alterarCliente(int cpf,int newCpf,String nome,String endereco){
-        EntityManager em = emf.createEntityManager();
-        EntityTransaction tx = em.getTransaction();
         ClienteEntity cliente = em.find(ClienteEntity.class,cpf);
         cliente.setCpf(newCpf);
         cliente.setNome(nome);
@@ -43,8 +42,6 @@ public class ClienteService {
     }
 
     public void deletarCliente(int cpf){
-        EntityManager em = emf.createEntityManager();
-        EntityTransaction tx = em.getTransaction();
         ClienteEntity cliente = em.find(ClienteEntity.class,cpf);
         tx.begin();
         em.remove(cliente);

@@ -3,77 +3,55 @@ package wasabi.sushi.app.projeto.banco;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "pedido", schema = "formacaojava", catalog = "")
+@Table(name = "pagamento", schema = "trabalho_netbiis", catalog = "")
 public class PagamentoEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
-    @Column(name = "idPedido")
-    private int idPedido;
+    @Column(name = "idPagamento")
+    private int idPagamento;
     @Basic
-    @Column(name = "Cliente_idCliente")
-    private int clienteIdCliente;
+    @Column(name = "id_produto")
+    private int idProduto;
     @Basic
-    @Column(name = "Produto_idProduto")
-    private int produtoIdProduto;
+    @Column(name = "valor_total")
+    private double valorTotal;
     @Basic
-    @Column(name = "Valor_Total")
-    private String valorTotal;
+    @Column(name = "id_cliente")
+    private int idCliente;
     @Basic
-    @Column(name = "Numero_nota")
-    private String numeroNota;
-    @Basic
-    @Column(name = "Forma_pagamento")
+    @Column(name = "forma_pagamento")
     private String formaPagamento;
 
-    public PagamentoEntity(int clienteIdCliente, int produtoIdProduto, String valorTotal, String numeroNota, String formaPagamento) {
-        this.clienteIdCliente = clienteIdCliente;
-        this.produtoIdProduto = produtoIdProduto;
-        this.valorTotal = valorTotal;
-        this.numeroNota = numeroNota;
-        this.formaPagamento = formaPagamento;
+    public int getIdPagamento() {
+        return idPagamento;
     }
 
-    public PagamentoEntity() {
+    public void setIdPagamento(int idPagamento) {
+        this.idPagamento = idPagamento;
     }
 
-    public int getIdPedido() {
-        return idPedido;
+    public int getIdProduto() {
+        return idProduto;
     }
 
-    public void setIdPedido(int idPedido) {
-        this.idPedido = idPedido;
+    public void setIdProduto(int idProduto) {
+        this.idProduto = idProduto;
     }
 
-    public int getClienteIdCliente() {
-        return clienteIdCliente;
-    }
-
-    public void setClienteIdCliente(int clienteIdCliente) {
-        this.clienteIdCliente = clienteIdCliente;
-    }
-
-    public int getProdutoIdProduto() {
-        return produtoIdProduto;
-    }
-
-    public void setProdutoIdProduto(int produtoIdProduto) {
-        this.produtoIdProduto = produtoIdProduto;
-    }
-
-    public String getValorTotal() {
+    public double getValorTotal() {
         return valorTotal;
     }
 
-    public void setValorTotal(String valorTotal) {
+    public void setValorTotal(double valorTotal) {
         this.valorTotal = valorTotal;
     }
 
-    public String getNumeroNota() {
-        return numeroNota;
+    public int getIdCliente() {
+        return idCliente;
     }
 
-    public void setNumeroNota(String numeroNota) {
-        this.numeroNota = numeroNota;
+    public void setIdCliente(int idCliente) {
+        this.idCliente = idCliente;
     }
 
     public String getFormaPagamento() {

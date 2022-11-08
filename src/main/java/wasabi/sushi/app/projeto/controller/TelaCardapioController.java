@@ -14,6 +14,7 @@ import javafx.scene.control.Button;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 import wasabi.sushi.app.projeto.aplication.Main;
+import wasabi.sushi.app.projeto.service.PedidoService;
 import wasabi.sushi.app.projeto.utils.*;
 
 import java.io.IOException;
@@ -79,6 +80,7 @@ public class TelaCardapioController implements Initializable {
         loadView(ResourceStage.currentStage(event),
                 "/wasabi/sushi/app/projeto/view/telapromocao.fxml",
                 "Promoção", (PromocaoController controller) -> {
+            //controller.setService(new PedidoService());
 
         });
     }

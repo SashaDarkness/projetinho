@@ -19,15 +19,6 @@ public class NumeroCartaoEntity {
     @Column(name = "Nome_Cartao")
     private String nomeCartao;
 
-    public NumeroCartaoEntity(int clienteIdCliente, String numeroCartao, String nomeCartao) {
-        this.clienteIdCliente = clienteIdCliente;
-        this.numeroCartao = numeroCartao;
-        this.nomeCartao = nomeCartao;
-    }
-
-    public NumeroCartaoEntity() {
-    }
-
     public int getIdNumeroCartao() {
         return idNumeroCartao;
     }

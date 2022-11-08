@@ -3,7 +3,7 @@
                  version="3.0">
 
     <entity class="wasabi.sushi.app.projeto.banco.ClienteEntity">
-        <table name="cliente" schema="trabalho_netbiis" catalog=""/>
+        <table name="cliente" schema="trabalho_netbiis" />
         <attributes>
             <id name="idCliente">
                 <column name="idCliente"/>
@@ -20,7 +20,7 @@
         </attributes>
     </entity>
     <entity class="wasabi.sushi.app.projeto.banco.EntradasEntity">
-        <table name="entradas" schema="trabalho_netbiis" catalog=""/>
+        <table name="entradas" schema="trabalho_netbiis" />
         <attributes>
             <id name="idEntradas">
                 <column name="idEntradas"/>
@@ -37,7 +37,7 @@
         </attributes>
     </entity>
     <entity class="wasabi.sushi.app.projeto.banco.HollWasabiEntity">
-        <table name="holl_wasabi" schema="trabalho_netbiis" catalog=""/>
+        <table name="holl_wasabi" schema="trabalho_netbiis" />
         <attributes>
             <id name="idHollWasabi">
                 <column name="idHoll_Wasabi"/>
@@ -53,8 +53,8 @@
             </basic>
         </attributes>
     </entity>
-    <entity class="wasabi.sushi.app.projeto.banco.PagamentoEntity">
-        <table name="numero_cartao" schema="trabalho_netbiis" catalog=""/>
+    <entity class="wasabi.sushi.app.projeto.banco.NumeroCartaoEntity">
+        <table name="numero_cartao" schema="trabalho_netbiis" />
         <attributes>
             <id name="idNumeroCartao">
                 <column name="idNumero_Cartao"/>
@@ -71,7 +71,27 @@
         </attributes>
     </entity>
     <entity class="wasabi.sushi.app.projeto.banco.PagamentoEntity">
-        <table name="pedido" schema="trabalho_netbiis" catalog=""/>
+        <table name="pagamento" schema="trabalho_netbiis" />
+        <attributes>
+            <id name="idPagamento">
+                <column name="idPagamento"/>
+            </id>
+            <basic name="idProduto">
+                <column name="id_produto"/>
+            </basic>
+            <basic name="valorTotal">
+                <column name="valor_total"/>
+            </basic>
+            <basic name="idCliente">
+                <column name="id_cliente"/>
+            </basic>
+            <basic name="formaPagamento">
+                <column name="forma_pagamento"/>
+            </basic>
+        </attributes>
+    </entity>
+    <entity class="wasabi.sushi.app.projeto.banco.PedidoEntity">
+        <table name="pedido" schema="trabalho_netbiis" />
         <attributes>
             <id name="idPedido">
                 <column name="idPedido"/>

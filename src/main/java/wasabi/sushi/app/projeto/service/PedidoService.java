@@ -21,18 +21,18 @@ public class PedidoService {
         return pedidos;
 
     }
-
-    public void adicionarPedido(int idCliente, int id_produto, String valor_total, String numeroNota, String formaPagamento){
-        EntityManager em = emf.createEntityManager();
-        EntityTransaction tx = em.getTransaction();
-        PagamentoEntity cliente = new PagamentoEntity(
-            idCliente,id_produto,valor_total,numeroNota,formaPagamento
-        );
-        tx.begin();
-        em.persist(cliente);
-        tx.commit();
-        em.close();
-    }
+//
+//    public void adicionarPedido(int idCliente, int id_produto, double valor_total, String numeroNota, String formaPagamento){
+//        EntityManager em = emf.createEntityManager();
+//        EntityTransaction tx = em.getTransaction();
+//        PagamentoEntity cliente = new PagamentoEntity(
+//            idCliente,id_produto,valor_total,numeroNota,formaPagamento
+//        );
+//        tx.begin();
+//        em.persist(cliente);
+//        tx.commit();
+//        em.close();
+//    }
 
     public void alterarClientePedido(int id_pedido, int cpfCLiente, int newCpf, String nome, String endereco){
         EntityManager em = emf.createEntityManager();

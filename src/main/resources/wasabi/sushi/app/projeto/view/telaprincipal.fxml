@@ -1,37 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ToolBar?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox fx:id="tela" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="wasabi.sushi.app.projeto.controller.TelaPrincipalController">
+<VBox fx:id="tela" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" styleClass="background" stylesheets="@../style/style.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="wasabi.sushi.app.projeto.controller.TelaPrincipalController">
    <children>
       <Pane prefHeight="500.0" prefWidth="600.0">
          <children>
-            <AnchorPane layoutY="88.0" prefHeight="414.0" prefWidth="600.0">
+            <AnchorPane layoutY="30.0" prefHeight="473.0" prefWidth="600.0">
                <children>
-                  <Button fx:id="btnCadastrarClientes" layoutX="232.0" layoutY="57.0" mnemonicParsing="false" onAction="#actionCadastrarClientes" text="CADASTRAR USUÁRIO" />
-                  <Button fx:id="btnConsultarCardapio" layoutX="212.0" layoutY="118.0" mnemonicParsing="false" onAction="#actionCardapio" text="CARDAPIO DO RESTAURANTE" />
-                  <Button fx:id="btnSair" layoutX="285.0" layoutY="310.0" mnemonicParsing="false" onAction="#actionSairAplicacao" text="SAIR" />
-                  <Button fx:id="btnListarPedidos" layoutX="248.0" layoutY="182.0" mnemonicParsing="false" onAction="#actionListarPedidos" text="LISTA DE PEDIDOS" />
-                  <Button fx:id="btnFinalzarCompra" layoutX="243.0" layoutY="242.0" mnemonicParsing="false" onAction="#actionFinalizarCompra" text="FINALIZAR COMPRA" />
-               </children>
-            </AnchorPane>
-            <AnchorPane prefHeight="86.0" prefWidth="600.0">
-               <children>
-                  <ToolBar prefHeight="72.0" prefWidth="600.0">
-                     <items>
-                        <ImageView fitHeight="78.0" fitWidth="300.0" pickOnBounds="true" preserveRatio="true">
+                  <GridPane layoutX="192.0" layoutY="103.0" prefHeight="321.0" prefWidth="254.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Button id="botao" fx:id="btnCadastrarClientes" mnemonicParsing="false" onAction="#actionCadastrarClientes" prefHeight="40.0" prefWidth="287.0" text="CADASTRAR USUÁRIO" />
+                        <Button id="botao" fx:id="btnConsultarCardapio" mnemonicParsing="false" onAction="#actionCardapio" prefHeight="38.0" prefWidth="281.0" text="CARDAPIO DO RESTAURANTE" GridPane.rowIndex="1" />
+                        <Button id="botao" fx:id="btnListarPedidos" mnemonicParsing="false" onAction="#actionListarPedidos" prefHeight="35.0" prefWidth="281.0" text="LISTA DE PEDIDOS" GridPane.rowIndex="2" />
+                        <Button id="botao" fx:id="btnFinalzarCompra" mnemonicParsing="false" onAction="#actionFinalizarCompra" prefHeight="31.0" prefWidth="281.0" text="FINALIZAR COMPRA" GridPane.rowIndex="3" />
+                        <Button id="botao" fx:id="btnSair" mnemonicParsing="false" onAction="#actionSairAplicacao" text="SAIR" GridPane.rowIndex="4" />
+                        <AnchorPane prefHeight="65.0" prefWidth="293.0" GridPane.rowIndex="4" />
+                     </children>
+                  </GridPane>
+                  <GridPane layoutY="-10.0" prefHeight="101.0" prefWidth="600.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <ImageView fitHeight="90.0" fitWidth="500.0" pickOnBounds="true" preserveRatio="true" scaleX="1.1">
                            <image>
                               <Image url="@../imagem/wassabi.png" />
                            </image>
+                           <GridPane.margin>
+                              <Insets left="200.0" />
+                           </GridPane.margin>
                         </ImageView>
-                     </items>
-                  </ToolBar>
+                     </children>
+                  </GridPane>
+                  <AnchorPane layoutX="-1.0" layoutY="433.0" prefHeight="38.0" prefWidth="600.0">
+                     <children>
+                        <ToolBar layoutY="24.0" prefHeight="10.0" prefWidth="601.0" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="31.0" prefWidth="600.0">
+               <children>
+                  <ToolBar prefHeight="10.0" prefWidth="600.0" />
                </children>
             </AnchorPane>
          </children>

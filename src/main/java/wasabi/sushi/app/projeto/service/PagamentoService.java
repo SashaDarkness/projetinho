@@ -12,17 +12,17 @@ public class PagamentoService {
 
     EntityManagerFactory emf = Persistence.createEntityManagerFactory("default");
 
-    public void adicionarPagamento(int idCliente, String numeroCard, String nomeCard){
-        EntityManager em = emf.createEntityManager();
-        EntityTransaction tx = em.getTransaction();
-        NumeroCartaoEntity pagCard = new NumeroCartaoEntity(
-                idCliente,numeroCard,nomeCard
-        );
-        tx.begin();
-        em.persist(pagCard);
-        tx.commit();
-        em.close();
-    }
+//    public void adicionarPagamento(int idCliente, String numeroCard, String nomeCard){
+//        EntityManager em = emf.createEntityManager();
+//        EntityTransaction tx = em.getTransaction();
+//        NumeroCartaoEntity pagCard = new NumeroCartaoEntity(
+//                idCliente,numeroCard,nomeCard
+//        );
+//        tx.begin();
+//        em.persist(pagCard);
+//        tx.commit();
+//        em.close();
+//    }
 
     
 }
